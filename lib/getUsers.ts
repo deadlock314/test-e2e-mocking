@@ -14,11 +14,14 @@ export async function getUsers() {
     } else {
       fetchUrl = "https://jsonplaceholder.typicode.com/users";
     }
+    console.log(`Fetching users from: ${fetchUrl}`);
 
     const res = await fetch(fetchUrl, { cache: "no-store" });
     if (!res.ok) throw new Error("Failed to fetch users");
     return { users: await res.json(), error: null };
   } catch (error: any) {
+    console.error(error);
+
     return { users: [], error: error.message || "Unknown error" };
   }
 }
