@@ -5,7 +5,7 @@ export async function getUsers() {
 
     if (useMock) {
       // Use Vercel URL if available, otherwise use localhost for local dev
-      const vercelUrl = process.env.NEXT_PUBLIC_VERCEL_URL;
+      const vercelUrl = process.env.BASE_URL;
       if (vercelUrl) {
         fetchUrl = `https://${vercelUrl}/api/users`;
       } else {
