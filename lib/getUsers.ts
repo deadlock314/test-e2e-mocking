@@ -7,7 +7,7 @@ export async function getUsers() {
       // Use Vercel URL if available, otherwise use localhost for local dev
       const vercelUrl = process.env.BASE_URL;
       if (vercelUrl) {
-        fetchUrl = `https://${vercelUrl}/api/users`;
+        fetchUrl = `${vercelUrl}/api/users`;
       } else {
         fetchUrl = `http://localhost:3000/api/users`;
       }
