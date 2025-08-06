@@ -5,7 +5,7 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    baseUrl: "http://localhost:3000",
+    baseUrl: "https://test-e2e-mocking-o3dcczp9i-chandan-sonis-projects.vercel.app",
     specPattern: "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
   },
 });

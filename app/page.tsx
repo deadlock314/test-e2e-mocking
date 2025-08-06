@@ -1,5 +1,5 @@
 import React from "react";
-import { getUsers } from "./lib/getUsers";
+import { getUsers } from "../lib/getUsers";
 
 // This is a server component by default in the app directory
 export default async function HomePage() {
